@@ -82,7 +82,7 @@
 		
 		<div  class="container margin_60_35">
 			<div class="row">
-				<div id="creator" class="col-lg-7">					
+				<div id="creator" class="col-lg-12">					
 					<nav aria-label="" class="add_top_20">
 						<ul class="pagination pagination-sm">
 							<li class="page-item disabled">
@@ -98,14 +98,7 @@
 					</nav>
 					<!-- /pagination -->
 				</div>
-				<!-- /col -->
-				
-				<aside class="col-lg-5" id="sidebar">
-					<div id="map_listing" class="normal_list">
-					</div>
-				</aside>
-				<!-- /aside -->
-				
+				<!-- /col -->				
 			</div>
 			<!-- /row -->
 		</div>
@@ -128,7 +121,6 @@
 	'{"name":"nuMed (Downtown Chicago) - Coming Soon","title":"Clinic","photo": "nuMed.PNG" }]';
 
 			obj = JSON.parse(text);
-			var html = '';
 			var html = '';
 			$.each(obj, function (key, value) {
 			console.log("for each" + key,value)
