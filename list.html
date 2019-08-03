@@ -115,10 +115,10 @@
 	  <script src="convertcsv.json"></script>
 	<script type="text/javascript">
 	var text = '[' +
-	'{"name":"Maribis of Chicago","title":"Dispensary","photo":"Maribis.PNG" },' +
-	'{"name":"Columbia Care Dispensary","title":"Dispensary","photo":"Columbia.PNG" },' +
-	'{"name":"Dispensary 33 - Chicago","title":"Dispensary","photo":"Dispensary-33.PNG" },' +
-	'{"name":"nuMed (Downtown Chicago) - Coming Soon","title":"Clinic","photo": "nuMed.PNG" }]';
+	'{"name":"Maribis of Chicago","title":"Dispensary","photo":"Maribis.PNG","detail":"detail-page.html"},' +
+	'{"name":"Columbia Care Dispensary","title":"Dispensary","photo":"Columbia.PNG","detail":"A1.html" },' +
+	'{"name":"Dispensary 33 - Chicago","title":"Dispensary","photo":"Dispensary-33.PNG":"detail":"A2.html" },' +
+	'{"name":"nuMed (Downtown Chicago) - Coming Soon","title":"Clinic","photo": "nuMed.PNG","detail":"A3.html" }]';
 
 			obj = JSON.parse(text);
 			var html = '';
@@ -126,7 +126,7 @@
 			console.log("for each" + key,value)
 				html += '<div class="strip_list wow fadeIn">';
 				html += '<a href="#0" class="wish_bt"></a>';
-				html +='<figure> <a href="detail-page.html"><img src="assets/img/'+ value.photo+'" alt=""></a></figure>';
+				html +='<figure> <a href="'+ value.detail +'"><img src="assets/img/'+ value.photo+'" alt=""></a></figure>';
 				html += '<small>' + value.title + '</small>';
 				html += '<h3>' + value.name + '</h3>';
 				html += '<p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cuodo....</p>';
