@@ -115,13 +115,13 @@
 	  <script src="convertcsv.json"></script>
 	<script type="text/javascript">
 	var text = '[' +
-	'{"name":"Maribis of Chicago","title":"Dispensary","photo":"Maribis.PNG","detail":"detail-page.html"},' +
-	'{"name":"Columbia Care Dispensary","title":"Dispensary","photo":"Columbia.PNG","detail":"A1.html"},' +
-	'{"name":"Dispensary 33 - Chicago","title":"Dispensary","photo":"Dispensary-33.PNG":"detail":"A2.html"},' +
-	'{"name":"nuMed (Downtown Chicago) - Coming Soon","title":"Clinic","photo": "nuMed.PNG","detail":"A3.html"}'
-	']';
+	'{"name":"Maribis of Chicago","title":"Dispensary","photo":"Maribis.PNG","detail":"detail-page.html" },' +
+	'{"name":"Columbia Care Dispensary","title":"Dispensary","photo":"Columbia.PNG","detail":"A1.html" },' +
+	'{"name":"Dispensary 33 - Chicago","title":"Dispensary","photo":"Dispensary-33.PNG":"detail":"A2.html" },' +
+	'{"name":"nuMed (Downtown Chicago) - Coming Soon","title":"Clinic","photo": "nuMed.PNG","detail":"A3.html" }]';
 
 			obj = JSON.parse(text);
+			console.log(obj)
 			var html = '';
 			$.each(obj, function (key, value) {
 			console.log("for each" + key,value)
