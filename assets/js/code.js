@@ -16,46 +16,7 @@ console.log("for each" + key,value)
     html += '<h3>' + value.name + '</h3>';
     html += '<p>'+ value.description +'</p>';
     html +=	'<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><iclass="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>';
-    html += '<ul><li><a href="' + value.direction + '"target="_blank">Directions</a></li><li><a href="' + value.detail +'">Order Now</a></li></ul>';
+    html += '<ul><li><a href="#0" onclick="onHtmlClick("Doctors", 1)" class="btn_listing">View on Map</a></li><li><a href="' + value.direction + '"target="_blank">Directions</a></li><li><a href="' + value.detail +'">Order Now</a></li></ul>';
     html += '</div>';
 });
 $('#creator').html(html);
-
-
-
-filterSelection("all")
-function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("strip_list");
-    if (c == "all") c = "";
-    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-    for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-}
-
-// Show filtered elements
-function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-        }
-    }
-}
-
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-        }
-    }
-    element.className = arr1.join(" ");
-}
