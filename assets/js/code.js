@@ -3,7 +3,7 @@ var text = '[' +
 '{"name":"Columbia Care Dispensary","title":"Dispensary","photo":"Columbia.PNG","detail":"A1.html", "direction":"https://www.google.com/maps/place/Columbia+Care+Illinois/@41.9668904,-87.7624421,17z/data=!3m1!4b1!4m5!3m4!1s0x880fcc17671444d3:0x5f4f76dc68f774c2!8m2!3d41.9668904!4d-87.7602534","description":"Columbia Care Chicago Columbia Care is a patient-centric medical marijuana dispensary striving to lead the industry through the highest level of care"},' +
 '{"name":"Dispensary 33 - Chicago","title":"Dispensary","photo":"Dispensary-33.PNG","detail":"A2.html", "direction":"https://www.google.com/maps/place/Dispensary+33/@41.9726556,-87.6699653,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd2288112ce21:0x2ed5610dea0ab078!8m2!3d41.9726556!4d-87.6677766","description":"Dispensary 33 is a Chicago Medical Marijuana Dispensary Dispensary 33 serves their patients with a passion for helping people in Chicago"},' +
 '{"name":"nuMed (Downtown Chicago) - Coming Soon","title":"Clinic","photo": "nuMed.PNG","detail":"A3.html", "direction":"https://www.google.com/maps/place/NuMed+Medical+Marijuana+Dispensary/@41.910823,-87.6630349,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd3022141bc69:0x554ad36d8c789522!8m2!3d41.910823!4d-87.6608462","description":"We carry a wide range of medical marijuana products like pre-packaged flower, prerolls, CBD and THC tinctures, edibles"}]';
-
+//dynamically add JSON elements to the page
 obj = JSON.parse(text);
 console.log(obj)
 var html = '';
@@ -20,3 +20,42 @@ console.log("for each" + key,value)
     html += '</div>';
 });
 $('#creator').html(html);
+
+
+
+filterSelection("all")
+function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("strip_list");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+        }
+    }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+    }
+    element.className = arr1.join(" ");
+}
