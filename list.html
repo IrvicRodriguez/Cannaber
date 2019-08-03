@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Cannabis delivered to your door">
-	<meta name="author" content="Local Health.Care Team">
+	<meta name="author" content="Allan & Irvic">
 	<title>Cannaber - Cannabis delivered to your door</title>
 
 	<!-- GOOGLE WEB FONT -->
@@ -15,12 +15,10 @@
 	<!-- BASE CSS -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
-	<!-- <link href="css/menu.css" rel="stylesheet"> -->
-	<!-- <link href="css/vendors.css" rel="stylesheet"> -->
 	<link href="assets/css/icon_fonts/css/all_icons_min.css" rel="stylesheet">
 
 	<!-- YOUR CUSTOM CSS -->
-	<link href="css/custom.css" rel="stylesheet">
+	<link href="assets/css/custom.css" rel="stylesheet">
 
 </head>
 
@@ -45,13 +43,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<h4><strong>Showing <span>4</span></strong> of <span>10</span> results</h4>
-					</div>
-					<div class="col-md-6">
-						<div class="search_bar_list">
-							<input type="text" class="form-control" placeholder="search the name of a place">
-							<input type="submit" value="Search">
-						</div>
+						<h4><strong>Showing <span>4</span></strong> of <span>4</span> results</h4>
 					</div>
 				</div>
 				<!-- /row -->
@@ -111,43 +103,9 @@
 
 	<div id="toTop"></div>
 	<!-- Back to top button -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	  <script src="convertcsv.json"></script>
-	<script type="text/javascript">
-	var text = '[' +
-	'{"name":"Maribis of Chicago","title":"Dispensary","photo":"Maribis.PNG","detail":"detail-page.html" },' +
-	'{"name":"Columbia Care Dispensary","title":"Dispensary","photo":"Columbia.PNG","detail":"A1.html" },' +
-	'{"name":"Dispensary 33 - Chicago","title":"Dispensary","photo":"Dispensary-33.PNG","detail":"A2.html" },' +
-	'{"name":"nuMed (Downtown Chicago) - Coming Soon","title":"Clinic","photo": "nuMed.PNG","detail":"A3.html" }]';
-
-			obj = JSON.parse(text);
-			console.log(obj)
-			var html = '';
-			$.each(obj, function (key, value) {
-			console.log("for each" + key,value)
-				html += '<div class="strip_list wow fadeIn">';
-				html += '<a href="#0" class="wish_bt"></a>';
-				html +='<figure> <a href="' + value.detail + '"><img src="assets/img/'+ value.photo+'" alt=""></a></figure>';
-				html += '<small>' + value.title + '</small>';
-				html += '<h3>' + value.name + '</h3>';
-				html += '<p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cuodo....</p>';
-				html +=	'<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><iclass="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>';
-				html += '<a href="badges.html" data-toggle="tooltip" data-placement="top" data-original-title="Badge Level"class="badge_list_1"><img src="img/badges/badge_4.svg" width="15" height="15" alt=""></a>';
-				html += '<ul><li><a href="#0" onclick="onHtmlClick("Doctors", 1)" class="btn_listing">View on Map</a></li><li><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361"target="_blank">Directions</a></li><li><a href="' + value.detail +'">Order Now</a></li></ul>';
-				html += '</div>';
-			});
-			$('#creator').html(html);
-	</script>
-	<!-- COMMON SCRIPTS -->
-	<!-- <script src="js/jquery-2.2.4.min.js"></script> -->
-	<!-- <script src="js/common_scripts.min.js"></script>
-	<script src="js/functions.js"></script> -->
-	
-	<!-- SPECIFIC SCRIPTS -->
-	<!-- <script src="http://maps.googleapis.com/maps/api/js"></script>
-	<script src="js/markerclusterer.js"></script>
-    <script src="js/map_listing.js"></script>
-	<script src="js/infobox.js"></script>
-	 -->
+	<script type="text/javascript" src="/Cannaber/assets/js/code.js"> </script>
 </body>
 </html>
