@@ -1,58 +1,21 @@
-# Cannaber
+#Description
+Cannaber mobile and user friendly web based application to make life easier for those who are looking for a more convenient way to get there medical and recreational cannabis products. 
 
-Bootcamp project #1
+#Motivation
+In 2020 there will be a need in Illinois for a delivery service for medical and recreational cannabis products. We can provide that service through a mobile and user-friendly web-based application right to your door.
 
-https://irvicrodriguez.github.io/Cannaber/
+#Results
+With increasing number of stores to come in the near future. Convenience can be provided at the click of a button. The industry looks to see growth revenue to be in the billions with continuous revenue advancements. 
 
-TITLE
+#Team Efforts
+Allan Pearson: We both worked on front and backend product development. We used Bootstrap, JavaScript, Breadcrumb, CSS Styles, Html, API, Google maps. 
+		       
+Irvic Rodriguez: We both worked on front and backend product development. We used Bootstrap, JavaScript, Breadcrumb, CSS Styles, Html, API, Google maps.
 
-Cannaber
-
-SLOGAN
-
-Cannabis delivery to your door
-
-PROBLEM STATEMENT
-
-How can we deliver cannabis to people in a short amount of time and break into in a new market that will grow exponentially.
-
-PROJECT SUMMARY
-
-The objective of this project was to create a fully polished website that would be a working demo for future version of a cannabis delivery company. The website permits people to find nearby providers see their menu and order directly from them so that they can get thei cannabis delivered in a short amount of time.
-
-USER ARCHETYPES
-
-People who want to smoke weed but are to busy to buy.
-
-people who want to try weed but are unsure of how to get it
-
-people who need it for medical reasons and cannot get it from the dispensaries themselves.
-
-CORE USER STORIES
-
-As a canabis user, I want to find nearby providers to deliver cannabis to me.
-
-As a user I want to see the meny for cannabis strains and see their prices
-
-I want to to be able to pay on the website and get my weed delivered.
+#Challenges
+In the beginning of the product project building process. We faced branch, push, merge conflicts. While forking a branch line code conflicts happened in the push or pull to the master. Resulting in complete deletion of the branch. Communication is the main key to produce line commit communication between team changes.   
 
 
+#Improvements
+In the future building additional features, informational photo gallery, additional payment options, digital client interaction.  
 
-SECONDARY USER STORIES
-
-I want the website to show me map locations for dispensaries 
-
-I want to see driver delivery status in a map
-
-I want my data to be remember in the website for future use.
-
-
-PROJECT MEMBERS
-
-Allan Pearson. Business Developer. Project Manager, Backend Listing Developer
-
-irvic Rodriguez: Full Stack Developer, UX/UI designer.
-
-APIS
-
---None
